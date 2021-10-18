@@ -17,7 +17,8 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
 >>>>>>>> d1e495e (feat: Change sitemap.xml, robots.xml end-point):pages/sitemap.xml.tsx
   if (req.method !== 'GET') {
     res.statusCode = 405
-    res.write({ error: 'method not allowed' })
+    res.setHeader("Content-Type", "application/json")
+    res.write(JSON.stringify({ error: "method not allowed" }))
     res.end()
     return {
       props: {}
