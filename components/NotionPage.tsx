@@ -17,7 +17,7 @@ import { NotionRenderer, Code, Collection, CollectionRow } from 'react-notion-x'
 // utils
 import { getBlockTitle } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
-import { mapNotionImageUrl } from 'lib/map-image-url'
+import { mapImageUrl } from 'lib/map-image-url'
 import { getPageDescription } from 'lib/get-page-description'
 import { getPageTweet } from 'lib/get-page-tweet'
 import { searchNotion } from 'lib/search-notion'
@@ -131,7 +131,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
 
-  const socialImage = mapNotionImageUrl(
+  const socialImage = mapImageUrl(
     (block as PageBlock).format?.page_cover || config.defaultPageCover,
     block
   )
@@ -268,7 +268,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         defaultPageCover={config.defaultPageCover}
         defaultPageCoverPosition={config.defaultPageCoverPosition}
         mapPageUrl={siteMapPageUrl}
-        mapImageUrl={mapNotionImageUrl}
+        mapImageUrl={mapImageUrl}
         searchNotion={searchNotion}
         pageFooter={comments}
         pageAside={pageAside}
