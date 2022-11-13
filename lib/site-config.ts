@@ -15,6 +15,7 @@ export interface SiteConfig {
   linkedin?: string
   newsletter?: string
   zhihu?: string
+  mastodon?: string;
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null
