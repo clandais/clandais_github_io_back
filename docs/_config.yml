@@ -28,7 +28,7 @@ twitter_username: none
 github_username:  clandais
 
 # Build settings
-theme: minima
+theme: minimal
 plugins:
   - jekyll-feed
 
