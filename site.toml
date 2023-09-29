@@ -4,7 +4,25 @@
 
 # DO NOT CHANGE THIS VALUE. The deploy script relies on the site being deployed to the
 # "site" directory.
-name = "Clément Landais - Unity Developer"
+name = "site"
 
 # This page should be the root of your website. It's important.
 page = "https://pollen-tuesday-412.notion.site/Cl-ment-Landais-5bedc515d55b4026974e543ae2bd2e15"
+
+# optionally apply notion's dark mode, remove the line below to use the default light mode
+theme = "dark"
+
+## Global Site Settings ##
+# this [site] table defines override settings for the whole site
+# later on we will see how to define settings for a single page
+[site]
+  ## Custom Meta Tags ##
+  # defined as an array of tables (double square brackets)
+  # each key in the table maps to an atttribute in the tag
+  # the following adds the tag <meta name="title" content="Loconotion Test Site"/>
+  [[site.meta]]
+  name = "title"
+  content = "Clément Landais - Unity Developer"
+  [[site.meta]]
+  name = "description"
+  content = "I am Clément Landais. This is my personal online  portfolio"
