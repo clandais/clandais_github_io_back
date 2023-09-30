@@ -1,25 +1,26 @@
 import { siteConfig } from './lib/site-config'
 
+
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: '5bedc515d55b4026974e543ae2bd2e15',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Clément Landais - Unity Developer',
+  domain: 'clandais.github.io',
+  author: 'Clément Landais',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Clément Landais - Unity Developer',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  twitter: '_blood_pact_',
+  github: 'clandais',
+  linkedin: 'clement-landais-unity',
   // newsletter: '#', //Use full newsletter URL
 
   // default notion icon and cover images for site-wide consistency (optional)
