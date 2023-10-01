@@ -13,6 +13,7 @@ export default siteConfig({
   name: 'Clément Landais - Unity Developer',
   domain: 'clandais.github.io',
   author: 'Clément Landais',
+  language: 'en',
 
   // open graph metadata (optional)
   description: 'Clément Landais - Unity Developer',
